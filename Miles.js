@@ -1,1 +1,0 @@
-const info = getbyid("info")
