@@ -12,6 +12,16 @@
     padding: 10px;
 }
 
+#Picture {
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 7px;
+}
+
+#ImageSelect {
+    display: none;
+}
+
 #Info {
     position: grid;
     padding: 10px;

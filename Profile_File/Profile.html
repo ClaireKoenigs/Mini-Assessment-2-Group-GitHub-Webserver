@@ -17,7 +17,16 @@
     </nav>
     <h1>Your Profile</h1>
     <div id="ProfileInfo">
-        <img id="ProfilePic" style="height:150px;" src="user.png" alt="placeholder">
+        <div id="ProfilePic">
+            <img id="Picture" style="height:150px;width:150px;" src="user.png" alt="placeholder">
+            <br><br>
+            <button id="PicChange">Change Profile Picture</button>
+            <div id="ImageSelect">
+                <h2>Pick an image</h2>
+                <input type="file" id="InputFile" accept="image/*">
+                <button id="Submit" style="width:min-content;">Change</button>
+            </div>
+        </div>
         <div id="Info">
             <h4>Username</h4>
             <p id="Username">placeholder1234</p>
@@ -25,10 +34,12 @@
             <p id="Email">placehoder@placeholder.com</p>
             <h4>Favorate Genre</h4>
             <p>placeholder</p>
+            <button id="ProSave"><b>Save</b></button>
         </div>
     </div>
     <div id="Settings">
         <h2><u>Settings</u></h2>
+        <button id="SetSave"><b>Save</b></button>
     </div>
 </body>
 
