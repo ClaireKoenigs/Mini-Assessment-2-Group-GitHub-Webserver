@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href='style.css'>
-    <script src="Miles.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="Profile.js" defer></script>
 </head>
 
 <body>
@@ -16,12 +16,20 @@
         </li>
     </nav>
     <h1>Your Profile</h1>
-    <img id="image" src="user.png" alt="placeholder"></img>
-    <br>
-    <p id="Username"></p>
-    <br>
-    <p id="Email"></p>
-    <br>
+    <div id="ProfileInfo">
+        <img id="ProfilePic" style="height:150px;" src="user.png" alt="placeholder">
+        <div id="Info">
+            <h4>Username</h4>
+            <p id="Username">placeholder1234</p>
+            <h4>Email</h4>
+            <p id="Email">placehoder@placeholder.com</p>
+            <h4>Favorate Genre</h4>
+            <p>placeholder</p>
+        </div>
+    </div>
+    <div id="Settings">
+        <h2><u>Settings</u></h2>
+    </div>
 </body>
 
 </html>

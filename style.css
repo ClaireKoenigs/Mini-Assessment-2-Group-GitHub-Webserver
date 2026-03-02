@@ -1,5 +1,23 @@
-#HomeProfilePic{
+#HomeProfilePic {
     position: absolute;
-    right:0px;
-    padding:10px;
+    right: 0px;
+    padding: 10px;
+}
+
+#ProfileInfo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    position: grid;
+    padding: 10px;
+}
+
+#Info {
+    position: grid;
+    padding: 10px;
+}
+
+#Settings {
+    position: grid;
+    padding: 10px;
 }
