@@ -26,6 +26,3 @@ document.getElementById("Submit").addEventListener("click", function (event) {
 
     Imgselector.style.display = "none";
 });
-
-document.getElementById("ProSave").addEventListener("click",function(event){
-})
