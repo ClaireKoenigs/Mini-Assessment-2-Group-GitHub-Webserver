@@ -3,6 +3,10 @@ window.addEventListener("DOMContentLoaded", function () {
     if (savedPic) {
         Picture.src = savedPic;
     }
+    const savedGenre = this.localStorage.getItem("Genre");
+    if (savedGenre) {
+        Genre.value = savedGenre;
+    }
 });
 
 const PicBtn = document.getElementById("PicChange")
@@ -15,7 +19,7 @@ document.getElementById("Submit").addEventListener("click", function (event) {
     const file = document.getElementById("InputFile").files[0]
 
     if (!file) {
-        alert("File not selceted")
+        alert("File not selected")
         return;
     }
 
@@ -34,33 +38,36 @@ document.getElementById("Submit").addEventListener("click", function (event) {
     Imgselector.style.display = "none";
 });
 
+const Genre = document.getElementById("Genre")
 document.getElementById("Save").addEventListener("click", function (event) {
     event.preventDefault();
 
     const file = document.getElementById("InputFile").files[0];
 
     if (!file) {
-        alert("No file selected");
+        localStorage.setItem("Genre", Genre.value)
+        alert("Your changes have been saved")
         return;
     }
 
     const formData = new FormData();
     formData.append("image", file);
-
+    formData.append("oldImage", Picture.src);
 
     fetch("http://localhost:3000/upload", {
         method: "POST",
         body: formData
     })
-    .then(res => res.json()) 
-    .then(data => { 
-        console.log(data);
-        Picture.src = data.imageUrl; 
-        localStorage.setItem("profilePic", data.imageUrl);
-        alert("Image saved!");
-    })
-    .catch(err => {
-        console.error(err);
-        alert("Upload failed");
-    });
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            Picture.src = data.imageUrl;
+            localStorage.setItem("profilePic", data.imageUrl);
+            localStorage.setItem("Genre", Genre.value)
+            alert("Image saved!");
+        })
+        .catch(err => {
+            console.error(err);
+            alert("Upload failed");
+        });
 });

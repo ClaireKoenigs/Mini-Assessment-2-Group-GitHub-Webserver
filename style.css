@@ -9,14 +9,14 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     padding: 10px;
-    margin-left:10%
+    margin-left: 10%
 }
 
 #Picture {
     border-style: solid;
     border-radius: 100%;
     border-width: 7px;
-    border-color:ivory;
+    border-color: ivory;
 }
 
 #ImageSelect {
