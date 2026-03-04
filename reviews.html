@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    
+<h1>Ours Users Reviews</h1>
+    <nav>
+        <a href="index.html" id="homeButton">Home</a>
+        <a href="reviews.html" id="reviewButton">Reviews</a>
+        <a href="/Profile_File/Profile.html" id="profileButton">Profile</a>
+    </nav>
+
+<body onload="displayReply()">
+    <div class="reviewSection">
+    <p>Please leave the name of the movie and your review in the section below.</p>
+    <form id="reviewForm">
+            <label for="movies">Choose a movie:</label>
+            <select name="movies" id="movies">
+                <option value="Scream 7">Scream 7</option>
+                <option value="Goat">Goat</option>
+                <option value="Wuthering Heights">Wuthering Heights</option>
+            </select><br>
+        <label for="review">Input your review below:</label>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
+        <button type="button" id="submit">Submit</button><br><br>
+    </form>
+
+    <h1>Previous Reviews</h1>
+
+    <div id="displayArea"></div>
+
+    <footer>
+        <p>&copy; 2026 Movie Reviews. All rights reserved.</p>
+    </footer>
 </body>
 </html>
