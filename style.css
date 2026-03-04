@@ -31,3 +31,96 @@
     position: grid;
     padding: 10px;
 }
+
+/*home page*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background: #222;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20pt;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+main h2 {
+    padding-left: 20px;
+    text-align: center;
+}
+
+#infoColumns {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 50px;
+    width: 100%;
+    margin: 40px;
+    padding: 20px;
+    padding-left: 150px;
+    font-size: larger;
+}
+
+#infoColumns #left,
+#infoColumns #right {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+}
+
+#movieColumns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    font-size: larger;
+}
+
+#movieColumns div {
+    text-align: center;
+}
+
+#movieColumns img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+#leftMovie,
+#middleMovie,
+#rightMovie {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #bbb;
+}
