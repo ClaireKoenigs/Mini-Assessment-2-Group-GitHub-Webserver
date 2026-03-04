@@ -1,0 +1,26 @@
+{
+  "name": "mini-assessment-2-group-github-webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaireKoenigs/Mini-Assessment-2-Group-GitHub-Webserver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ClaireKoenigs/Mini-Assessment-2-Group-GitHub-Webserver/issues"
+  },
+  "homepage": "https://github.com/ClaireKoenigs/Mini-Assessment-2-Group-GitHub-Webserver#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.1.0"
+  }
+}
